@@ -1,128 +1,139 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>AVOID FORECLOSURE</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: hsl(182, 100%, 87%);
-      }
-      h1 {
-        color: hsl(0, 100%, 60%);
-        font-family: 'Arial Narrow', sans-serif;
-        font-size: 94px;
-      }
-      h2, h3, h4 {
-        font-family: 'Gill Sans MT', sans-serif;
-      }
-      h2 {
-        color: hsl(0, 0%, 100%);
-        font-size: 53.333px;
-        padding-top: 28px;
-        padding-left: 13.333px;
-      }
-      h3 {
-        color: hsl(0, 0%, 100%);
-        font-size: 33.333px;
-      }
-      h4 {
-        color: hsl(220, 62%, 20%);
-        font-size: 11.333px;
-      }
-      p, a {
-        font-family: 'Book Antiqua', serif;
-        text-decoration: none;
-      }
-      p {
-        color: hsl(0, 0%, 0%);
-        font-size: 22.666px;
-      }
-      a {
-        color: hsl(0, 100%, 60%);
-        font-size: 21.333px;
-      }
-    </style>
-  </head>
-  <body>
-    <p>
-      <br />
-    </p>
-    <h2>
-      AVOID FORECLOSURE
-    </h2>
-    <p style="padding-top: 8px; padding-left: 110.666px">
-      DON’T LET THE BANK TAKE YOUR HOME AND DESTROY YOUR CREDIT.
-    </p>
-    <p>
-      <br/>
-    </p>
-    <p style="padding-top: 22.666px; padding-left: 110.666px">
-      WE STOP YOUR FORECLOSURE OR CAN BUY YOUR HOME AS IS, COMMISSION FREE, 
-      <span style="text-decoration: underline">
-        IN
-      </span> 
-    </p>
-    <p style="text-decoration: underline; padding-left: 110.666px">
-      UNDER 14 DAYS
-    </p>
-    <p>
-      <br/>
-    </p>
-    <p style="padding-top: 24px; padding-left: 110.666px">
-      CALL 123 - 555 - 8789
-    </p>
-    <p style="padding-top: 1.333px; padding-left: 110.666px">
-      VISIT TOWNSHIPHOMEBUYERS.COM
-    </p>
-    <p>
-      <br/>
-    </p>
-    <h4 style="text-align: right">
-      Scan me to learn more
-    </h4>
-    <h1 style="padding-left: 1.333px; line-height: 97.333px">
-      URGENT NOTICE
-    </h1>
-    <p>
-    <br/>
-    </p>
-    <h3 style="padding-top: 20px; padding-left: 12px">
-      WERE THE EXPERTS
-    </h3>
-    <p style="font-size: 21.333px; padding-top: 6.666px; padding-left: 13.333px">
-      WE ARE GWINNETT’S EXPERTS IN STOPPING FORECLOSURES AND
-      <span style="text-decoration: underline">
-        FREE
-      </span> 
-      FORECLOSURE ASSISTANCE
-    </p>
-    <p>
-      <br/>
-    </p>
-    <p style="padding-left: 13.333px; font-size: 21.333px; padding-top: 6.666px">
-      CALL US NOW AT
-      <span style="color: hsl(0, 100%, 60%)">
-        123 - 555 - 8789
-      </span>
-    </p>
-    <p>
-      <br/>
-    </p>
-    <p style="padding-left: 13.333px">
-      <a href="http://WWW.TOWNSHIPHOMEBUYERS.COM/" style="color: #000000; font-size: 21.333px" target="_blank">
-        OR VISIT ONLINE AT <span style="color: hsl(0, 100%, 60%)">WWW.TOWNSHIPHOMEBUYERS.COM</span>
-      </a>
-    </p>
-    <p>
-      <br/>
-    </p>
-    <p style="padding-left: 242.666px; font-family: 'Times New Roman', serif; font-size: 13.333px">
-      Barcode
-    </p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVOID FORECLOSURE</title>
+  <style>
+    @font-face {
+      font-family: 'Sanchez';
+      src: url('./assets/fonts/sanchez-regular.ttf') format('truetype');
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'League Spartan';
+      src: url('./assets/fonts/leaguespartan-bold.otf') format('opentype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Zuume Rough';
+      src: url('./assets/fonts/zuumerough-bold.otf') format('opentype');
+      font-weight: bold;
+      font-style: normal;
+    }
+
+    :root {
+      --sanchez-font: 'Sanchez', sans-serif;
+      --spartan-font: 'League Spartan', sans-serif;
+      --zuume-font: 'Zuume Rough', sans-serif;
+      --primary-color: hsl(0, 0%, 0%);
+      --secondary-color: hsl(0, 0%, 100%);
+      --primary-accent-color: hsl(0, 100%, 60%);
+      --secondary-accent-color: hsl(23, 100%, 65%);
+      --primary-bg-color: hsl(182, 100%, 87%);
+      --secondary-bg-color: hsl(220, 62%, 20%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--sanchez-font);
+      color: var(--primary-color);
+      font-size: 1.5rem;
+    }
+
+    h1 {
+      color: var(--primary-accent-color);
+      font-family: var(--zuume-font);
+      font-size: 6rem;
+    }
+
+    h3 {
+      font-family: var(--spartan-font);
+      color: var(--secondary-color);
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width: 100%; height: 100vh; display: flex; flex-direction: column; align-items: center; gap: 2rem">
+    <div
+      style="width: 54rem; height: 36rem; background: var(--primary-bg-color); padding-top: 1.75rem; padding-bottom: 1.75rem; padding-left: 1.5rem; padding-right: 1.5rem; display: flex">
+      <div
+        style="transform: rotate(-90deg); transform-origin: left-top; width: fit-content; height: fit-content; white-space: no-wrap">
+        <div style="color: var(--primary-accent-color); font-family: var(--zuume-font); font-size: 6rem">URGENT NOTICE
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <div
+          style="background: var(--secondary-bg-color); font-family: var(--spartan-font); font-size: 3.5rem; color: var(--secondary-color); display: flex; justify-content: center; align-items: center; line-height: normal; width: max-content; height: max-content; padding: 1rem; padding-bottom: 0.5rem; border-radius: 1.75rem; letter-spacing: 0.25rem">
+          <div style="text-transform: uppercase">Avoid Foreclosure</div>
+        </div>
+        <div style="text-transform: uppercase">
+          Don't let the bank take your home and destroy your credit.
+        </div>
+        <div style="text-transform: uppercase">
+          We stop your foreclosure or can buy your home as is, sommision free, <span
+            style="text-decoration: underline">in under 14 days</span>
+        </div>
+        <div style="text-transform: uppercase">
+          Call 123 - 555 - 8789
+        </div>
+        <div style="text-transform: uppercase">
+          Visit townshiphomebuyers.com
+        </div>
+        <div
+          style="color: var(--secondary-bg-color); font-size: 0.75rem; font-family: var(--spartan-font); text-transform: uppercase">
+          Scan me to learn more
+        </div>
+        <img src="./assets/images/qrcode.png" alt="qr code" style="padding-left: 12rem; width: 12rem; height: auto">
+      </div>
+    </div>
+
+    <div
+      style="width: 54rem; height: 36rem; background: var(--primary-bg-color); padding-top: 1.75rem; padding-bottom: 1.75rem; padding-left: 1.5rem; padding-right: 1.5rem; display: flex">
+      <h3 style="padding-top: 1.25rem; padding-left: 0.75rem">
+        WERE THE EXPERTS
+      </h3>
+      <p style="font-size: 1.25rem; padding-top: 0.5rem; padding-left: 0.75rem">
+        WE ARE GWINNETT’S EXPERTS IN STOPPING FORECLOSURES AND
+        <span style="text-decoration: underline">
+          FREE
+        </span>
+        FORECLOSURE ASSISTANCE
+      </p>
+      <p>
+        <br />
+      </p>
+      <p style="padding-left: 0.75rem; font-size: 1.25rem; padding-top: 0.5rem">
+        CALL US NOW AT
+        <span style="color: var(--primary-accent-color)">
+          123 - 555 - 8789
+        </span>
+      </p>
+      <p>
+        <br />
+      </p>
+      <p style="padding-left: 0.75rem">
+        <a href="http://WWW.TOWNSHIPHOMEBUYERS.COM/"
+          style="color: var(--primary-color); font-size: 1.25rem; text-decoration: none" target="_blank">
+          OR VISIT ONLINE AT <span style="color: var(--primary-accent-color)">WWW.TOWNSHIPHOMEBUYERS.COM</span>
+        </a>
+      </p>
+      <p>
+        <br />
+      </p>
+      <img src="./assets/images/barcode.png" alt="barcode" style="padding-left: 12rem; width: 20rem; height: auto">
+      <img src="./assets/images/stamp.png" alt="stamp" style="padding-left: 12rem; width: 15rem; height: auto">
+    </div>
+  </div>
+</body>
+
 </html>
